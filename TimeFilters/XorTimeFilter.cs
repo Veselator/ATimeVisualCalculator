@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ATimeVisualCalculator.TimeFilters
+﻿namespace ATimeVisualCalculator.TimeFilters
 {
-    internal class XorTimeFilter
+    internal class XorTimeFilter : ITimeFilter
     {
+        public TimeFilterType Type => TimeFilterType.Xor;
+        public bool Apply(bool a, bool b)
+        {
+            return a ^ b;
+        }
     }
 }

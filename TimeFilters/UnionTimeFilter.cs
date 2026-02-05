@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ATimeVisualCalculator.TimeFilters
+﻿namespace ATimeVisualCalculator.TimeFilters
 {
-    internal class UnionTimeFilter
+    internal class UnionTimeFilter : ITimeFilter
     {
+        public TimeFilterType Type => TimeFilterType.Or;
+
+        public bool Apply(bool a, bool b)
+        {
+            return a || b;
+        }
     }
 }
