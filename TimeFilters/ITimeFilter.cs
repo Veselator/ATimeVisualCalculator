@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ATimeVisualCalculator.TimeFilters
+﻿namespace ATimeVisualCalculator.TimeFilters
 {
-    internal interface ITimeFilter
+    public interface ITimeFilter
     {
+        public TimeFilterType Type { get; }
+        public bool Apply(bool a, bool b); 
+    }
+
+    public enum TimeFilterType
+    {
+        And,
+        Or,
+        Xor
     }
 }
