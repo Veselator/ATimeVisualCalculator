@@ -1,11 +1,16 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
+	  <ApplicationIcon>icon.ico</ApplicationIcon>
+    <UseWPF>true</UseWPF>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UseWPF>true</UseWPF>
+    <RootNamespace>ATimeVisualCalculator</RootNamespace>
+    <AssemblyName>ATimeVisualCalculator</AssemblyName>
+    <Description>A Visual Time Calculator - Automate timeline intersection calculations</Description>
+    <Version>1.0.0</Version>
   </PropertyGroup>
 
 </Project>
